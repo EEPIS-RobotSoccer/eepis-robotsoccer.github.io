@@ -385,10 +385,16 @@ a{
     justify-content: center; 
 }
 
-#motion .motion-member{
+#motion .motion-member .first{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
+
+#motion .motion-member .second{
+    display: flex;
+    flex-direction: row;
+}
+
 /* end motion section */
 
 /* communication section */

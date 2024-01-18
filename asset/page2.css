@@ -539,7 +539,7 @@ a{
 
     .member-img img{
         width: 80%;
-        height: 80%;
+        height: auto;
         transition: .3s ease;
     }
     

@@ -545,7 +545,7 @@ a{
     
     .member-img img:hover{
         width: 85%;
-        height: 85%;
+        height: auto;
     }
     /* team section */
     #team h1{

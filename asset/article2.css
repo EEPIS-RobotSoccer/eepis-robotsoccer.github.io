@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
-    font-size: 10px; 
+html {
+    font-size: 10px;
     font-family: 'Montserrat', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.container{
+.container {
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -22,14 +23,14 @@ a{
     justify-content: center;
 }
 
-.brand h1{
+.brand h1 {
     font-size: 3rem;
     text-transform: uppercase;
     color: white;
 }
 
 /* header section */
-#header{
+#header {
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -38,13 +39,13 @@ a{
     height: auto;
 }
 
-#header .header{
+#header .header {
     min-height: 12vh;
-    background-color:rgba(31, 30, 30, 0.24);
+    background-color: rgba(31, 30, 30, 0.24);
     transition: .3s ease background-color;
 }
 
-#header .brand img{
+#header .brand img {
     position: relative;
     left: 20px;
     width: 96px;
@@ -53,16 +54,16 @@ a{
 }
 
 #header .nav-bar {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	height: 100%;
-	max-width: 1300px;
-	padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
 }
 
-#header .nav-list ul{
+#header .nav-list ul {
     list-style: none;
     position: absolute;
     background-color: rgb(31, 30, 30);
@@ -79,11 +80,11 @@ a{
     transition: .8s ease left;
 }
 
-#header .nav-list ul.active{
+#header .nav-list ul.active {
     left: 0;
 }
 
-#header .nav-list ul a{
+#header .nav-list ul a {
     text-decoration: none;
     color: rgb(203, 203, 203);
     font-size: 2rem;
@@ -95,8 +96,8 @@ a{
 
 }
 
-#header .nav-list ul a::after{
-    content:attr(data-after);
+#header .nav-list ul a::after {
+    content: attr(data-after);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -108,16 +109,16 @@ a{
     transition: .3s ease;
 }
 
-#header .nav-list li:hover a::after{
+#header .nav-list li:hover a::after {
     transform: translate(-50%, -50%) scale(1);
     letter-spacing: initial;
 }
 
-#header .nav-list ul li:hover a{
+#header .nav-list ul li:hover a {
     color: white;
 }
 
-#header .hamburger{
+#header .hamburger {
     position: relative;
     height: 50px;
     width: 50px;
@@ -135,7 +136,7 @@ a{
     margin-bottom: 5px;
 }
 
-#header .hamburger::after{
+#header .hamburger::after {
     position: absolute;
     content: '';
     height: 100%;
@@ -146,15 +147,16 @@ a{
 }
 
 
-#header .hamburger .bar{
+#header .hamburger .bar {
     height: 2px;
     width: 20px;
     position: relative;
     background-color: white;
     z-index: -1;
 }
+
 #header .hamburger .bar::after,
-#header .hamburger .bar::before{
+#header .hamburger .bar::before {
     content: '';
     position: absolute;
     height: 100%;
@@ -165,32 +167,32 @@ a{
     transition-property: top, bottom;
 }
 
-#header .hamburger .bar::before{
+#header .hamburger .bar::before {
     bottom: 8px;
 }
 
-#header .hamburger .bar::after{
+#header .hamburger .bar::after {
     top: 8px;
 }
 
-#header .hamburger.active .bar::before{
+#header .hamburger.active .bar::before {
     bottom: 0;
 }
 
-#header .hamburger.active .bar::after{
+#header .hamburger.active .bar::after {
     top: 0;
 }
 
 /* end header section */
 
 /* article 2 section */
-#article1{
+#article1 {
     background-color: #29323c;
     position: relative;
     z-index: 1;
 }
 
-#article1::after{
+#article1::after {
     content: '';
     background-image: url(img/bgpens.png);
     /* background-size: cover; */
@@ -204,26 +206,27 @@ a{
     z-index: -1;
 }
 
-#article1 .article1{
+#article1 .article1 {
     min-height: 45vh;
 }
 
-#article1 h1{
+#article1 h1 {
     font-size: 3rem;
     color: white;
 }
+
 /* end article 2 section */
 
 /* main section */
-#main .main{
+#main .main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px; 
+    padding: 10px;
 }
 
-#main .main-article{
+#main .main-article {
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -231,25 +234,25 @@ a{
     margin-bottom: 20px;
 }
 
-#main .main-img{
+#main .main-img {
     width: 100%;
     height: auto;
 }
 
-#main .main-img img{
+#main .main-img img {
     width: 100%;
     height: auto;
     object-fit: cover;
     object-position: center;
 }
 
-#main .main-text{
+#main .main-text {
     padding: 30px;
     display: flex;
     flex-direction: column;
 }
 
-#main .main-article h2{
+#main .main-article h2 {
     font-size: 3rem;
     margin: 10px 30px;
     margin-top: 20px;
@@ -257,12 +260,12 @@ a{
     color: rgb(24, 24, 78);
 }
 
-#main .main-article p{
+#main .main-article p {
     font-size: 1.5rem;
     margin: 0 40px;
     margin-top: 20px;
     font-weight: 400;
-    text-align:justify;
+    text-align: justify;
     display: -webkit-box;
     -webkit-flow-clamp: 3;
     -webkit-box-orient: vertical;
@@ -271,17 +274,18 @@ a{
     margin: 10px 0;
 }
 
-#main .main-article ul li{
+#main .main-article ul li {
     font-size: 1.5rem;
-    list-style:disc;
+    list-style: disc;
     margin-left: 10%;
     font-weight: bolder;
     margin: 20px 10%;
 }
+
 /* end main section */
 
 /* footer section */
-#footer .footer{
+#footer .footer {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     min-height: 200px;
     flex-direction: column;
@@ -289,7 +293,7 @@ a{
     padding-bottom: 10px;
 }
 
-#footer h2{
+#footer h2 {
     color: white;
     font-size: 1.6rem;
     letter-spacing: .1rem;
@@ -298,35 +302,36 @@ a{
     font-weight: 500;
 }
 
-#footer .social-icon{
+#footer .social-icon {
     display: flex;
     margin-bottom: 30px;
 }
 
-#footer .social-item{
+#footer .social-item {
     margin: 0 5px;
 }
 
-#footer .social-item{
+#footer .social-item {
     filter: grayscale(1);
     transition: .3s ease filter;
 }
 
-#footer .social-item:hover{
+#footer .social-item:hover {
     filter: grayscale(0);
 }
 
-#footer p{
+#footer p {
     font-size: 1.1rem;
     color: white;
 }
+
 /* end footer section */
 
 /* Media Query for tablet */
 @media only screen and (min-width: 758px) {
 
     /* main division */
-    #main .main-img img{
+    #main .main-img img {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -337,17 +342,20 @@ a{
         height: auto;
     }
 
-    #main .main-text h2{
+    #main .main-text h2 {
         text-align: center;
     }
+
     /* end division */
 }
+
 /* end Media Query for tablet */
 
 /* maedia query for desktop */
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
+
     /* main division */
-    #main .main-img img{
+    #main .main-img img {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -358,11 +366,11 @@ a{
         height: auto;
     }
 
-    #main .main-article .main-text p{
+    #main .main-article .main-text p {
         font-size: 1.5rem;
         margin-top: 20px;
         font-weight: 400;
-        text-align:justify;
+        text-align: justify;
         display: -webkit-box;
         -webkit-flow-clamp: 3;
         -webkit-box-orient: vertical;
@@ -370,14 +378,15 @@ a{
         text-overflow: ellipsis;
         margin: 10px 50px;
     }
+
     /* end main division */
 
     /* header */
-    #header .hamburger{
+    #header .hamburger {
         display: none;
     }
 
-    #header .nav-list ul{
+    #header .nav-list ul {
         position: initial;
         display: block;
         height: auto;
@@ -385,31 +394,35 @@ a{
         background-color: transparent;
     }
 
-    #header .nav-list ul li{
+    #header .nav-list ul li {
         display: inline-block;
     }
 
-    #header .nav-list ul li a{
+    #header .nav-list ul li a {
         font-size: 1.1rem;
         margin-right: 10px;
     }
 
-    #header .nav-list ul a::after{
+    #header .nav-list ul a::after {
         display: none;
     }
+
     /* end header */
 }
+
 /* end maedia query for desktop */
 
 /* keyframe */
-@keyframes hamburger_puls{
-    0%{
+@keyframes hamburger_puls {
+    0% {
         opacity: 1;
         transform: scale(1);
     }
-    100%{
+
+    100% {
         opacity: 0;
         transform: scale(1.5);
     }
 }
+
 /* end keyframe */

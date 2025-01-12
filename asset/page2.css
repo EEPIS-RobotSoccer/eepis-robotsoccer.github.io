@@ -537,14 +537,24 @@ a{
         padding: 0 30px;
     }
 
+    #leader .member-img img , #official .member-img img{
+        width: 30%;
+        height: auto;
+      }
+
     .member-img img{
-        width: 80%;
+        width: 50%;
         height: auto;
         transition: .3s ease;
     }
     
+    #leader .member-img img:hover{
+        width: 33%;
+        height: auto;
+      }
+
     .member-img img:hover{
-        width: 85%;
+        width: 55%;
         height: auto;
     }
     /* team section */
